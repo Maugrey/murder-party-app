@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import DataService from '../services/dataService';
+import './Timer.css'; // On peut créer un fichier CSS spécifique si besoin
 
 /**
- * Timer component displays the elapsed time since game start and current phase info.
+ * Timer component displays elapsed time and phase info in a single line:
+ * "HH:MM:SS - Phase X HH:MM:SS"
  */
 const Timer = () => {
   const [gameTime, setGameTime] = useState(0);
@@ -38,10 +40,7 @@ const Timer = () => {
 
   return (
     <div className="timer">
-      <p>Temps total de la partie: {formatTime(gameTime)}</p>
-      <p>
-        Phase {gameData.currentPhase} – Temps depuis le début de la phase: {formatTime(phaseTime)}
-      </p>
+      <p>{formatTime(gameTime)} - Phase {gameData.currentPhase} {formatTime(phaseTime)}</p>
     </div>
   );
 };

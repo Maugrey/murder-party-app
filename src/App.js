@@ -13,16 +13,15 @@ import Conditions from './pages/Conditions';
 
 /**
  * App component sets up routing and the global layout.
+ * The header now displays the burger menu and the timer in one line.
  */
 function App() {
   return (
     <Router>
       <div className="app-container">
-        <header>
-          <h1>Murder Party Application</h1>
-          {/* Global timers and phase info always visible */}
-          <Timer />
+        <header className="app-header">
           <Navigation />
+          <Timer />
         </header>
         <main>
           <Routes>

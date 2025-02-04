@@ -1,0 +1,63 @@
+/* Navigation.css - Styles for navigation menu and mobile burger */
+
+/* Navigation container */
+.navigation {
+    position: relative;
+  }
+  
+  /* Burger container and button (for mobile) */
+  .burger-container {
+    display: none;
+  }
+  
+  .burger-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Desktop menu (affiché par défaut) */
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    text-decoration: underline;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .burger-container {
+      display: block;
+    }
+    
+    /* Le menu est masqué par défaut en mobile et se déplie lorsqu'il possède la classe "open" */
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #004d99;
+      flex-direction: column;
+      display: none;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    
+    .nav-links.open {
+      display: flex;
+    }
+    
+    .nav-links li {
+      padding: 0.5rem 1rem;
+    }
+  }
+  

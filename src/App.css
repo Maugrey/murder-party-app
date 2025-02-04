@@ -1,5 +1,6 @@
-/* src/App.css */
+/* App.css - Global styles, page layout, buttons, lists */
 
+/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -13,46 +14,24 @@ body {
   min-height: 100vh;
 }
 
-header {
+/* Header container for overall layout */
+.app-header {
   background-color: #004d99;
   color: white;
   padding: 1rem;
-}
-
-header h1 {
-  margin: 0 0 1rem 0;
-}
-
-.navigation ul {
-  list-style: none;
-  padding: 0;
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navigation li {
-  margin: 0;
-}
-
-.navigation a {
-  color: white;
-  text-decoration: none;
-}
-
-.navigation a.active,
-.navigation a:hover {
-  text-decoration: underline;
-}
-
-.timer {
-  margin-bottom: 1rem;
-}
-
+/* Main content area */
 main {
   flex: 1;
   padding: 1rem;
 }
 
+/* Button styles */
 button {
   padding: 0.5rem 1rem;
   background-color: #004d99;
@@ -67,10 +46,9 @@ button:hover {
   background-color: #003366;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .navigation ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
