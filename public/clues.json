@@ -1,0 +1,26 @@
+[
+  {
+    "location": "Salon",
+    "npc": "Mme Dupont",
+    "level": 1,
+    "clue": "Indice de niveau 1 : Le tableau est faux.",
+    "phase": 1,
+    "condition": ""
+  },
+  {
+    "location": "Salon",
+    "npc": "Mme Dupont",
+    "level": 2,
+    "clue": "Indice de niveau 2 : Le faux tableau cache une cachette.",
+    "phase": 2,
+    "condition": "secret=1"
+  },
+  {
+    "location": "Cuisine",
+    "npc": "M. Martin",
+    "level": 1,
+    "clue": "Indice : Le couteau ne présente pas de traces de sang.",
+    "phase": 1,
+    "condition": ""
+  }
+]

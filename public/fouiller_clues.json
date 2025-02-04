@@ -1,0 +1,27 @@
+[
+    {
+      "location": "Bibliothèque",
+      "place": "étagère",
+      "clue": "Un vieux livre qui semble avoir été déplacé.",
+      "type": "objet",
+      "phase": 1,
+      "condition": ""
+    },
+    {
+      "location": "Chambre",
+      "place": "sous le lit",
+      "clue": "Une trace de sang suspecte.",
+      "type": "observation",
+      "phase": 1,
+      "condition": ""
+    },
+    {
+      "location": "Cuisine",
+      "place": "placard",
+      "clue": "Un paquet de médicament caché.",
+      "type": "objet",
+      "phase": 2,
+      "condition": "medoc=1"
+    }
+  ]
+  
