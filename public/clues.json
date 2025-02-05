@@ -16,6 +16,30 @@
     "condition": "secret=1"
   },
   {
+    "location": "Salon",
+    "npc": "M. Juju",
+    "level": 1,
+    "clue": "Indice de niveau 1.",
+    "phase": 1,
+    "condition": ""
+  },
+  {
+    "location": "Salon",
+    "npc": "M. Juju",
+    "level": 2,
+    "clue": "Indice de niveau 2.",
+    "phase": 1,
+    "condition": ""
+  },
+  {
+    "location": "Salon",
+    "npc": "M. Juju",
+    "level": 3,
+    "clue": "Indice de niveau 3.",
+    "phase": 1,
+    "condition": ""
+  },
+  {
     "location": "Cuisine",
     "npc": "M. Martin",
     "level": 1,

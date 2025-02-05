@@ -11,8 +11,10 @@ import DataService from '../services/dataService';
  * - Only available clues (according to phase and conditions) are considered.
  * - For a given couple (location/PNJ), clues are organized in levels (starting at level 1).
  * - On the first interrogation, the level 1 clue is shown; on subsequent clicks, the next level is shown.
- * - When all levels have been seen for that couple, the highest level clue is shown and a "Déjà vu" indication is displayed.
- * - When a different location or PNJ is selected, the displayed clue is cleared.
+ * - When all levels have been seen for that couple, the highest level clue is shown.
+ * - The "Déjà vu" message is displayed only when the couple is re-sélectionné (i.e. si aucun indice n'est affiché)
+ *   et que la totalité des niveaux disponibles a été consultée.
+ * - When the location or PNJ selection changes, any displayed clue is cleared.
  */
 const Interroger = () => {
   const [allClues, setAllClues] = useState([]);
@@ -50,13 +52,13 @@ const Interroger = () => {
       .catch((error) => console.error("Error fetching clues:", error));
   }, []);
 
-  // Lorsqu'un lieu est sélectionné, on met à jour la liste des PNJ disponibles pour ce lieu.
+  // Update the list of NPCs whenever the selected location changes.
   useEffect(() => {
     if (selectedLocation) {
       const gameData = DataService.getGameData();
       const currentPhase = gameData.currentPhase || 1;
 
-      // Filtrer les indices disponibles pour le lieu sélectionné.
+      // Filter clues available for the selected location.
       const cluesForLocation = allClues.filter((clue) => {
         if (clue.location !== selectedLocation) return false;
         if (clue.phase > currentPhase) return false;
@@ -68,9 +70,10 @@ const Interroger = () => {
         return true;
       });
 
-      // Extraire la liste unique des PNJ disponibles pour ce lieu.
+      // Extract the unique list of NPCs available for that location.
       const uniqueNpcs = Array.from(new Set(cluesForLocation.map((clue) => clue.npc)));
       setNpcs(uniqueNpcs);
+      // Reset selection and displayed clue
       setSelectedNpc('');
       setDisplayedClue('');
       setAlreadySeen(false);
@@ -82,23 +85,28 @@ const Interroger = () => {
     }
   }, [selectedLocation, allClues]);
 
-  // Dès qu'un PNJ est sélectionné, on vérifie immédiatement si le couple (lieu, PNJ)
-  // a déjà vu la totalité des niveaux d'indices disponibles.
+  // When the PNJ is selected (and a location est sélectionné),
+  // on vérifie si le couple (lieu/PNJ) a vu la totalité des niveaux disponibles.
+  // Cet effet s'exécute lors d'une re-sélection, ce qui permettra d'afficher "Déjà vu"
+  // uniquement si aucun indice n'est actuellement affiché.
   useEffect(() => {
-    if (selectedLocation && selectedNpc) {
+    if (selectedLocation) {
+      // Dès qu'on sélectionne un couple, on efface l'indice affiché.
+      setDisplayedClue('');
+      
       const gameData = DataService.getGameData();
       const currentPhase = gameData.currentPhase || 1;
       const conditions = gameData.conditions || {};
 
-      // Filtrer les indices disponibles pour ce couple.
+      // Filter clues available for the couple.
       const availableForCouple = allClues.filter((clue) => {
         if (clue.location !== selectedLocation || clue.npc !== selectedNpc) return false;
-        if (clue.phase > currentPhase) return false;
+        /*if (clue.phase > currentPhase) return false;
         if (clue.condition && clue.condition !== "") {
           const [condName, condValue] = clue.condition.split('=');
           const expected = condValue === '1';
           return conditions[condName] === expected;
-        }
+        }*/
         return true;
       });
 
@@ -109,8 +117,6 @@ const Interroger = () => {
       } else {
         setAlreadySeen(false);
       }
-      // À chaque changement de sélection, on efface l'indice affiché.
-      setDisplayedClue('');
     }
   }, [selectedNpc, selectedLocation, allClues]);
 
@@ -125,7 +131,7 @@ const Interroger = () => {
     const currentPhase = gameData.currentPhase || 1;
     const conditions = gameData.conditions || {};
 
-    // Filtrer les indices pour le couple (selectedLocation, selectedNpc).
+    // Filter clues for the couple (selectedLocation, selectedNpc).
     let availableClues = allClues.filter((clue) => {
       if (clue.location !== selectedLocation || clue.npc !== selectedNpc) return false;
       if (clue.phase > currentPhase) return false;
@@ -150,10 +156,10 @@ const Interroger = () => {
     let clueToShow;
 
     if (seenLevels.length < availableClues.length) {
-      // Trouver le premier indice dont le niveau n'a pas encore été vu.
+      // Sélectionner le premier niveau qui n'a pas encore été vu.
       clueToShow = availableClues.find((clue) => !seenLevels.includes(clue.level));
     } else {
-      // Tous les niveaux ont été vus : afficher le dernier indice.
+      // Tous les niveaux ont été vus, afficher le dernier indice.
       clueToShow = availableClues[availableClues.length - 1];
     }
 
@@ -162,16 +168,11 @@ const Interroger = () => {
       DataService.markClueAsSeen(selectedLocation, selectedNpc, clueToShow.level);
     }
 
-    // Mise à jour du flag "Déjà vu" après enregistrement.
-    const updatedSeenLevels = DataService.getSeenClues(selectedLocation, selectedNpc);
-    if (updatedSeenLevels.length === availableClues.length) {
-      setAlreadySeen(true);
-    } else {
-      setAlreadySeen(false);
-    }
-
-    // Afficher l'indice sélectionné.
+    // Afficher l'indice.
     setDisplayedClue(clueToShow.clue);
+
+    // Ne pas afficher "Déjà vu" immédiatement après le clic (puisque l'indice est affiché).
+    //setAlreadySeen(false);
   };
 
   return (
@@ -209,7 +210,8 @@ const Interroger = () => {
             ))}
           </select>
         </label>
-        {/* Affichage immédiat de la mention "Déjà vu" uniquement si le couple a vu tous les niveaux */}
+        {/* Affichage de "Déjà vu" uniquement si le couple a vu tous les niveaux
+            et qu'aucun indice n'est actuellement affiché (c'est-à-dire lors d'une re-sélection). */}
         {selectedNpc && alreadySeen && (
           <p style={{ color: 'red', fontWeight: 'bold' }}>Déjà vu</p>
         )}
