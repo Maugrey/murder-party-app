@@ -94,19 +94,19 @@ const Interroger = () => {
       // Dès qu'on sélectionne un couple, on efface l'indice affiché.
       setDisplayedClue('');
       
-      const gameData = DataService.getGameData();
-      const currentPhase = gameData.currentPhase || 1;
-      const conditions = gameData.conditions || {};
+      // const gameData = DataService.getGameData();
+      // const currentPhase = gameData.currentPhase || 1;
+      // const conditions = gameData.conditions || {};
 
       // Filter clues available for the couple.
       const availableForCouple = allClues.filter((clue) => {
         if (clue.location !== selectedLocation || clue.npc !== selectedNpc) return false;
-        /*if (clue.phase > currentPhase) return false;
-        if (clue.condition && clue.condition !== "") {
-          const [condName, condValue] = clue.condition.split('=');
-          const expected = condValue === '1';
-          return conditions[condName] === expected;
-        }*/
+        // if (clue.phase > currentPhase) return false;
+        // if (clue.condition && clue.condition !== "") {
+        //   const [condName, condValue] = clue.condition.split('=');
+        //   const expected = condValue === '1';
+        //   return conditions[condName] === expected;
+        // }
         return true;
       });
 
