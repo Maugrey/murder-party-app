@@ -151,25 +151,29 @@ const Interroger = () => {
     // Trier les indices par ordre croissant de niveau.
     availableClues.sort((a, b) => a.level - b.level);
 
-    // Récupérer les niveaux déjà vus pour ce couple.
+    // Retrieve the levels already seen for this couple.
     const seenLevels = DataService.getSeenClues(selectedLocation, selectedNpc);
-    let clueToShow;
-
+    let newLevel;
     if (seenLevels.length < availableClues.length) {
-      // Sélectionner le premier niveau qui n'a pas encore été vu.
-      clueToShow = availableClues.find((clue) => !seenLevels.includes(clue.level));
+      // Select the first level that has not yet been seen.
+      const nextClue = availableClues.find((clue) => !seenLevels.includes(clue.level));
+      newLevel = nextClue.level;
+      // Mark the new level as seen.
+      DataService.markClueAsSeen(selectedLocation, selectedNpc, newLevel);
     } else {
-      // Tous les niveaux ont été vus, afficher le dernier indice.
-      clueToShow = availableClues[availableClues.length - 1];
+      // All levels have been seen; no new level is unlocked.
+      newLevel = availableClues[availableClues.length - 1].level;
     }
 
-    // S'il s'agit d'un nouveau niveau, le marquer comme vu.
-    if (!seenLevels.includes(clueToShow.level)) {
-      DataService.markClueAsSeen(selectedLocation, selectedNpc, clueToShow.level);
-    }
+    // Afficher tous les indices jusqu'au niveau newLevel.
+    const cluesToDisplay = availableClues.filter((clue) => clue.level <= newLevel);
+    // Par exemple, on peut concaténer les indices avec un retour à la ligne.
+    const combinedClue = cluesToDisplay
+      .map((clue) => `${clue.clue}`)
+      .join('\n\n');
 
-    // Afficher l'indice.
-    setDisplayedClue(clueToShow.clue);
+    // Afficher l'ensemble des indices.
+    setDisplayedClue(combinedClue);
 
     // Ne pas afficher "Déjà vu" immédiatement après le clic (puisque l'indice est affiché).
     //setAlreadySeen(false);
@@ -220,7 +224,7 @@ const Interroger = () => {
       {displayedClue && (
         <div className="clue-display">
           <h3>Indice :</h3>
-          <p>{displayedClue}</p>
+          <pre style={{ whiteSpace: 'pre-wrap' }}>{displayedClue}</pre>
         </div>
       )}
     </div>

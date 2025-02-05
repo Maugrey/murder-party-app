@@ -1,5 +1,21 @@
 [
   {
+    "location": "Infirmerie",
+    "npc": "Madame Pomfresh ",
+    "level": 1,
+    "clue": "Indice quand secret=0.",
+    "phase": 1,
+    "condition": "secret=0"
+  },
+  {
+    "location": "Infirmerie",
+    "npc": "Madame Pomfresh",
+    "level": 1,
+    "clue": "Indice quand secret=1.",
+    "phase": 1,
+    "condition": "secret=1"
+  },
+  {
     "location": "Salon",
     "npc": "Mme Dupont",
     "level": 1,
