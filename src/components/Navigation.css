@@ -10,14 +10,6 @@
     display: none;
   }
   
-  .burger-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  
   /* Desktop menu (affiché par défaut) */
   .nav-links {
     display: flex;
@@ -38,6 +30,16 @@
   @media (max-width: 768px) {
     .burger-container {
       display: block;
+    }
+  
+    .burger-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      margin: unset;
+      padding: unset;
     }
     
     /* Le menu est masqué par défaut en mobile et se déplie lorsqu'il possède la classe "open" */

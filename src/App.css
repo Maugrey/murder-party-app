@@ -58,6 +58,10 @@ ul {
   body {
     font-size: 1.1em; /* Augmenter la taille de la police pour une meilleure lisibilité */
   }
+
+  .app-header {
+    padding: 0.5rem;
+  }
   
   /* Boutons plus gros et plus espacés */
   button {
