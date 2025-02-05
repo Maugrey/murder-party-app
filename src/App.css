@@ -52,3 +52,45 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+/* Ajout pour mobile friendly dans App.css */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.1em; /* Augmenter la taille de la police pour une meilleure lisibilité */
+  }
+  
+  /* Boutons plus gros et plus espacés */
+  button {
+    padding: 1rem 1.5rem;
+    font-size: 1.1em;
+    margin: 1rem 1rem;
+  }
+
+  /* Améliorer l'espacement global */
+  main {
+    padding: 1.5rem;
+  }
+
+  /* Pour les listes, ajouter de l'espacement */
+  ul {
+    gap: 1rem;
+  }
+}
+
+/* Styles pour les listes déroulantes */
+select {
+  padding: 0.8rem;
+  font-size: 1.1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+}
+
+/* Optionnel: Pour mobile, on peut augmenter davantage la taille */
+@media (max-width: 768px) {
+  select {
+    padding: 1rem;
+    font-size: 1.2em;
+    width: 100%; /* Optionnel : occuper toute la largeur en mobile */
+  }
+}

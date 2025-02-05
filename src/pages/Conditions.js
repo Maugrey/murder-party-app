@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DataService from '../services/dataService';
+import './Conditions.css';
+
 
 /**
  * Conditions page:
@@ -44,14 +46,17 @@ const Conditions = () => {
           <p>
             <strong>{cond.name}</strong>: {cond.description}
           </p>
-          <label>
+          <label className="switch">
             <input
               type="checkbox"
               checked={gameData.conditions[cond.name] || false}
               onChange={() => toggleCondition(cond.name)}
             />
-            {gameData.conditions[cond.name] ? 'Activée' : 'Désactivée'}
+            <span className="slider"></span>
           </label>
+          <span className="switch-status">
+            {gameData.conditions[cond.name] ? 'Activée' : 'Désactivée'}
+          </span>
         </div>
       ))}
     </div>
