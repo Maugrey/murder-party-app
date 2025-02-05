@@ -13,15 +13,31 @@ const Home = () => {
   const gameStarted = gameData.gameStarted;
 
   const handleStart = () => {
-    // Initialize game data
-    gameData.gameStarted = true;
-    gameData.startTime = Date.now();
-    gameData.phaseStartTime = Date.now();
-    gameData.currentPhase = 1;
-    DataService.saveGameData(gameData);
-    // Navigue vers l'accueil pour rafraîchir l'affichage
-    navigate("/");
-    window.location.reload();
+    // Fetch the conditions from conditions.json using promises
+    fetch('/conditions.json')
+      .then((response) => response.json())
+      .then((conditionsFromJson) => {
+        // Create an object mapping each condition name to false.
+        const conditionsObject = {};
+        conditionsFromJson.forEach((cond) => {
+          conditionsObject[cond.name] = false;
+        });
+
+        // Initialize game data
+        gameData.gameStarted = true;
+        gameData.startTime = Date.now();
+        gameData.phaseStartTime = Date.now();
+        gameData.currentPhase = 1;
+        gameData.conditions = conditionsObject; // Initialiser toutes les conditions à false.
+        DataService.saveGameData(gameData);
+
+        // Naviguer vers la page d'accueil et recharger pour actualiser l'affichage
+        navigate("/");
+        window.location.reload();
+      })
+      .catch((error) => {
+        console.error("Error initializing conditions:", error);
+      });
   };
 
   if (!gameStarted) {
