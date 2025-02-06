@@ -132,6 +132,9 @@ const Interroger = () => {
     const conditions = gameData.conditions || {};
 
     // Filter clues for the couple (selectedLocation, selectedNpc).
+    let cluesForThisNpc = allClues.filter((clue) => {
+      return clue.location === selectedLocation && clue.npc === selectedNpc;
+    });
     let availableClues = allClues.filter((clue) => {
       if (clue.location !== selectedLocation || clue.npc !== selectedNpc) return false;
       if (clue.phase > currentPhase) return false;
@@ -175,6 +178,13 @@ const Interroger = () => {
     // Afficher l'ensemble des indices.
     setDisplayedClue(combinedClue);
 
+    const updatedSeenLevels = DataService.getSeenClues(selectedLocation, selectedNpc);
+    if (updatedSeenLevels.length === cluesForThisNpc.length) {
+      setAlreadySeen(true);
+    } else {
+      setAlreadySeen(false);
+    }
+
     // Ne pas afficher "Déjà vu" immédiatement après le clic (puisque l'indice est affiché).
     //setAlreadySeen(false);
   };
@@ -217,7 +227,7 @@ const Interroger = () => {
         {/* Affichage de "Déjà vu" uniquement si le couple a vu tous les niveaux
             et qu'aucun indice n'est actuellement affiché (c'est-à-dire lors d'une re-sélection). */}
         {selectedNpc && alreadySeen && (
-          <p style={{ color: 'red', fontWeight: 'bold' }}>Déjà vu</p>
+          <p style={{ color: 'red', fontWeight: 'bold' }}>Interrogatoire terminé</p>
         )}
       </div>
       <button onClick={handleInterrogate}>Interroger</button>
