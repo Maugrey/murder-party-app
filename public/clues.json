@@ -1,66 +1,426 @@
 [
   {
-    "location": "Infirmerie",
-    "npc": "Madame Pomfresh ",
-    "level": 1,
-    "clue": "Indice quand secret=0.",
-    "phase": 1,
-    "condition": "secret=0"
+      "location": "Bibliothèque",
+      "npc": "Dorian Lestrange",
+      "level": 1,
+      "clue": "Je suis le président du fan-club de Felicity Laige, vous voulez vous inscrire ? On déjà beaucoup de membres.",
+      "phase": 2,
+      "condition": ""
   },
   {
-    "location": "Infirmerie",
-    "npc": "Madame Pomfresh",
-    "level": 1,
-    "clue": "Indice quand secret=1.",
-    "phase": 1,
-    "condition": "secret=1"
+      "location": "Bibliothèque",
+      "npc": "Fiona Abercrombie",
+      "level": 1,
+      "clue": "Maintenant qu'il a remporté le championnat, Mathew a une place assurée chez les Chauves-Souris de Fichucastel.",
+      "phase": 2,
+      "condition": ""
   },
   {
-    "location": "Salon",
-    "npc": "Mme Dupont",
-    "level": 1,
-    "clue": "Indice de niveau 1 : Le tableau est faux.",
-    "phase": 1,
-    "condition": ""
+      "location": "Bibliothèque",
+      "npc": "Gideon Sharpe",
+      "level": 1,
+      "clue": "Hier soir, j'ai vu Nadia Evergreen passer en trombe près de la grande salle. Elle avait l'air pressée. Elle semblait provenir du viaduc et se dirigeait hors du château.",
+      "phase": 4,
+      "condition": ""
   },
   {
-    "location": "Salon",
-    "npc": "Mme Dupont",
-    "level": 2,
-    "clue": "Indice de niveau 2 : Le faux tableau cache une cachette.",
-    "phase": 2,
-    "condition": "secret=1"
+      "location": "Bibliothèque",
+      "npc": "Madame Pince",
+      "level": 1,
+      "clue": "Hadrian Bellesistoires est venu me voir en début d'année car il cherchait des livres sur les Vélanes. Mais il n'y avait rien qui l'intéressait, alors je lui ai conseillé d'aller chez Fleury et Bott.",
+      "phase": 3,
+      "condition": ""
   },
   {
-    "location": "Salon",
-    "npc": "M. Juju",
-    "level": 1,
-    "clue": "Indice de niveau 1.",
-    "phase": 1,
-    "condition": ""
+      "location": "Bibliothèque",
+      "npc": "Imogen Vance",
+      "level": 1,
+      "clue": "La directrice devrait faire quelque chose pour les chaises de la bibliothèque. Elles sont vraiment inconfortables.",
+      "phase": 2,
+      "condition": ""
   },
   {
-    "location": "Salon",
-    "npc": "M. Juju",
-    "level": 2,
-    "clue": "Indice de niveau 2.",
-    "phase": 1,
-    "condition": ""
+      "location": "Bibliothèque",
+      "npc": "Theodore Carmichael",
+      "level": 1,
+      "clue": "Madame Pince est vraiment trop stricte, elle nous empêche de parler lorsqu'on est à la bibliothèque.",
+      "phase": 2,
+      "condition": ""
   },
   {
-    "location": "Salon",
-    "npc": "M. Juju",
-    "level": 3,
-    "clue": "Indice de niveau 3.",
-    "phase": 1,
-    "condition": ""
+      "location": "Cuisines",
+      "npc": "Helga l’elfe de maison",
+      "level": 1,
+      "clue": "David Malone est venu manger hier vers 15h.",
+      "phase": 2,
+      "condition": ""
   },
   {
-    "location": "Cuisine",
-    "npc": "M. Martin",
-    "level": 1,
-    "clue": "Indice : Le couteau ne présente pas de traces de sang.",
-    "phase": 1,
-    "condition": ""
+      "location": "Cuisines",
+      "npc": "Basil l’elfe de maison",
+      "level": 1,
+      "clue": "Je suis en train de préparer une nouvelle recette de tarte aux champignons, j'espère qu’elle plaira aux élèves.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Ethan Crowley",
+      "level": 1,
+      "clue": "Hadrian Bellesistoires est un professeur génial. Tout le monde l'apprécie. Il a une énorme connaissance de l'histoire de la magie. Normal, c'est la matière qu'il enseigne.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Ethan Crowley",
+      "level": 2,
+      "clue": "Mais je ne le vois franchement pas occuper un autre poste que celui-ci. Je ne l'ai jamais vu se servir de sa baguette. Je pense qu'il a atteint un âge où il a oublié comment s'en servir.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Juliet Pembroke",
+      "level": 1,
+      "clue": "En début de soirée, lorsque je suis passée devant le bureau du professeur Bellesistoires, je l'ai entendu avoir une discussion houleuse avec la directrice. Elle n'avait pas l'air commode.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Juliet Pembroke",
+      "level": 2,
+      "clue": "Quelqu'un pas très loin les espionnait. Je pense que c'était un élève, ou une élève, mais il faisait sombre, je n'ai pas vu qui c'était, ni sa maison.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Hamish Bletchley",
+      "level": 1,
+      "clue": "Journée très agitée hier. Pendant midi, j'ai entendu des bruits d'explosion. Ca venait du couloir des professeurs.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Hamish Bletchley",
+      "level": 2,
+      "clue": "Et ça a recommencé le soir. Entre 21h et 23h. D'abord des bruits de duel provenant du viaduc, et ensuite à nouveau des explosions dans le couloir des professeurs.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Elspeth McFadden",
+      "level": 1,
+      "clue": "Le repas d'hier était vraiment trop mauvais. Je ne sais pas si c'est lié, mais c'était le défilé aux toilettes.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Angus Dearborn",
+      "level": 1,
+      "clue": "Ce qui est bien avec le professeur Bellesistoires, c'est sa manière de nous raconter l'histoire de la magie, c'est très vivant.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Grande Salle",
+      "npc": "Florence Bellamy",
+      "level": 1,
+      "clue": "Chloé Gauthier est très bien, mais je ne comprends pas pourquoi ce n'est pas Nadia Evergreen qui est devenue préfète en chef.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Infirmerie",
+      "npc": "Madame Pomfresh",
+      "level": 1,
+      "clue": "Nadia Evergreen est passée me voir tout à l'heure pour soigner une blessure au bras. C'était une large coupure, typiquement le genre de blessure provoquée par un Diffindo. Elle m'a dit qu'elle n'aurait pas du faire de duels la veille d'un examen.",
+      "phase": 2,
+      "condition": "nadia_seen_nurse=1"
+  },
+  {
+      "location": "Infirmerie",
+      "npc": "Cédric Whitehall",
+      "level": 1,
+      "clue": "Attraper un rhume juste avant les examens de fin d'année, c'est vraiment pas de chance.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Infirmerie",
+      "npc": "Madame Pomfresh",
+      "level": 1,
+      "clue": "Aucun élève ni professeur n'est venu à l'infirmerie entre hier soir et maintenant.",
+      "phase": 4,
+      "condition": "nadia_seen_nurse=0"
+  },
+  {
+      "location": "La tête de sanglier",
+      "npc": "Callum Peakes",
+      "level": 1,
+      "clue": "La directrice MacMillan était présente ici toute la soirée. Elle est partie après minuit, elle était sacrément éméchée.",
+      "phase": 4,
+      "condition": ""
+  },
+  {
+      "location": "La tête de sanglier",
+      "npc": "Isobel Bletchley",
+      "level": 1,
+      "clue": "La directrice MacMillan était là hier soir. Elle avait l'air préoccupée. Elle m'a parlé de Hadrian Bellesistoires et Andrew Reeves. Tout ne semblait pas bien se passer avec eux. Elle m'a dit qu'elle préférait s'en débarrasser, mais je ne sais pas duquel elle parlait ni ce qu'elle entendait exactement par \"s'en débarrasser\".",
+      "phase": 4,
+      "condition": ""
+  },
+  {
+      "location": "La tête de sanglier",
+      "npc": "Duncan Blackwood",
+      "level": 1,
+      "clue": "Je n'ai rien à vous dire, je n'étais pas là hier soir.",
+      "phase": 4,
+      "condition": ""
+  },
+  {
+      "location": "La tête de sanglier",
+      "npc": "Rowan Fawley",
+      "level": 1,
+      "clue": "Vous savez, ici on ne parle pas trop aux gens du ministère.",
+      "phase": 4,
+      "condition": ""
+  },
+  {
+      "location": "Les trois balais",
+      "npc": "Delphine Starling",
+      "level": 1,
+      "clue": "Hier soir, l'équipe de Quidditch de Gryffondor fêtait leur victoire avec leur préfète Nadia Evergreen. Ils sont repartis vers 23h.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Les trois balais",
+      "npc": "Hugo Redgrave",
+      "level": 1,
+      "clue": "Vous savez, il y a des rumeurs ici qui trainent sur la nouvelle professeur de Sortilège. La jeune femme super canon.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Les trois balais",
+      "npc": "Hugo Redgrave",
+      "level": 2,
+      "clue": "Déjà, tout le monde est fou d'elle, mais c'est normal, elle est vraiment trop belle.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Les trois balais",
+      "npc": "Hugo Redgrave",
+      "level": 3,
+      "clue": "Mais surtout, il parait qu'elle a beaucoup de succès auprès des élèves. Beaucoup trop, si vous voyez ce que je veux dire. Il parait qu'elle sort avec un élève.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Les trois balais",
+      "npc": "Rose Holloway",
+      "level": 1,
+      "clue": "On est passé pas loin de la catastrophe hier. Une fille de Serpentard a déboulé comme une furie et voulait refaire le portrait d'un Gryffondor. C'étaient des joueurs de Quidditch.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Les trois balais",
+      "npc": "Cassandra Whitmore",
+      "level": 1,
+      "clue": "J'adore venir ici, c'est toujours un moment de détente, hors de l'école.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Les trois balais",
+      "npc": "Oscar Bell",
+      "level": 1,
+      "clue": "On voit souvent des élèves venir aux trois balais. Ca me rappelle ma jeunesse, lorsque j'étais moi-même à Poudlard.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Gryffondors",
+      "npc": "Graham Otters",
+      "level": 1,
+      "clue": "Je connais un peu Nadia et Chloé, ce sont les meilleures amies du monde. En début d'année, elles m'ont demandé un service… Je ne sais pas si j'ai bien fait d'accepter...",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Gryffondors",
+      "npc": "Graham Otters",
+      "level": 2,
+      "clue": "Si vous insistez, je vais vous dire la vérité. Elles m'ont demandé de les lier par un serment inviolable. C'était une manière pour elles de sceller leur amitié.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Gryffondors",
+      "npc": "Hugo Callaghan",
+      "level": 1,
+      "clue": "Sylphide Reinhardt clame à qui veut bien l'entendre que les Gryffondors ont triché au Quidditch. Mais si j'étais elle, je ne la ramènerais pas. Elle se balade souvent la nuit dans les couloirs, comme si elle allait rencontrer quelqu'un. Et ce n'est pas Thibaud Laporte, si vous voyez ce que je veux dire.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Gryffondors",
+      "npc": "Hugo Callaghan",
+      "level": 2,
+      "clue": "Oui, Thibaud et Sylphide sont ensemble. Ce n'est un secret pour personne. Mais honnêtement, je ne sais pas comment il s'y est pris. Elle est beaucoup trop bien pour lui. De toute manière, je pense que c'est bientôt fini entre eux.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Gryffondors",
+      "npc": "Morgane Lively",
+      "level": 1,
+      "clue": "On m'a volé ma plume enchantée. Si j'attrape celui qui a fait ça, je vais lui faire regretter !",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Gryffondors",
+      "npc": "Tessa Holloway",
+      "level": 1,
+      "clue": "Je n'en peux plus d'entendre la grosse dame chanter, au secours.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Poufsouffles",
+      "npc": "Eleanor Finch",
+      "level": 1,
+      "clue": "Beaucoup d'élèves continuent à se procurer illégalement des potions. Personnellement, je n'en ai jamais acheté. Mais on m'a dit que c'étaient deux élèves qui étaient à la tête de ce trafic.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Poufsouffles",
+      "npc": "Eleanor Finch",
+      "level": 2,
+      "clue": "Tout le monde sait que depuis le début de l'année, c'est plus compliqué de s'en procurer. Malgré tout, le trafic continue. C'est étrange non ?",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Poufsouffles",
+      "npc": "Ruben Hawkins",
+      "level": 1,
+      "clue": "Depuis que David est passé préfet en chef, on a remonté dans le classement des 4 maisons. C'est un leader né, il nous motive autant qu'il peut.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Poufsouffles",
+      "npc": "Caleb Digby",
+      "level": 1,
+      "clue": "Je suis trop déçu de ne pas avoir pu organiser le tournoi de bavboule que j'avais prévu. Peut-être l'année prochaine ?",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Poufsouffles",
+      "npc": "Isla Moore",
+      "level": 1,
+      "clue": "Je pensais avoir trouvé un passage secret sous un tapis, mais ce n’était qu’un trou de souris…",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serdaigles",
+      "npc": "Ava Sterling",
+      "level": 1,
+      "clue": "Hier en fin d'après-midi, alors que je me baladais dans les couloirs, j'ai vu David Malone qui sortait du bureau de la directrice. Il remettait un parchemin sous sa robe de sorcier, et il a foncé dans les toilettes.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serdaigles",
+      "npc": "Lucinda Wright",
+      "level": 1,
+      "clue": "L'année dernière, David Malone passait souvent voir Thibaud. Mais depuis cette année, tout a changé.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serdaigles",
+      "npc": "Lucinda Wright",
+      "level": 2,
+      "clue": "Maintenant, ils s'ignorent complètement, et pire encore, David profite de la moindre occasion pour nous enlever des points.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serdaigles",
+      "npc": "Edgar Hill",
+      "level": 1,
+      "clue": "Lorsque j'ai dit au professeur Parmentier que mes devoirs avaient été mangés par un Veaudelune, il m'a dit que je n'étais pas le premier à sortir cette excuse. Pourtant c'est la vérité !",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serdaigles",
+      "npc": "Quentin Marbury",
+      "level": 1,
+      "clue": "J'ai essayé de fabriquer une encre invisible. Ca marche tellement bien, que personne ne veut me croire.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serpentards",
+      "npc": "Cassius Flint",
+      "level": 1,
+      "clue": "David Malone a énormément d'ambition, il aurait dû être Serpentard. Pas que pour son ambition d'ailleurs. Je dis ça, je dis rien !",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serpentards",
+      "npc": "Marianne Hawthorne",
+      "level": 1,
+      "clue": "Ces derniers jours, j'ai souvent vu Mathew Marble se rendre dans les bureaux d'Achille Parmentier et d'Andrew Reeves.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serpentards",
+      "npc": "Ophelia Rosier",
+      "level": 1,
+      "clue": "Le professeur Reeves est très sévère. Il me fait un peu peur.",
+      "phase": 2,
+      "condition": ""
+  },
+  {
+      "location": "Salle commune des Serpentards",
+      "npc": "Selena Avery",
+      "level": 1,
+      "clue": "Sylphide est tellement exceptionnelle, que je ne sais pas si Serpentard continuera à remporter les tournois après son départ.",
+      "phase": 3,
+      "condition": ""
+  },
+  {
+      "location": "Terrain de Quidditch",
+      "npc": "Coach Brighton",
+      "level": 1,
+      "clue": "Avant le match, j'ai remarqué que Mathew était à la fois nerveux et sûr de lui. Comme s'il savait que son équipe allait remporter la victoire, mais qu'il n'en était pas fier.",
+      "phase": 4,
+      "condition": ""
+  },
+  {
+      "location": "Terrain de Quidditch",
+      "npc": "Oliver McGowan",
+      "level": 1,
+      "clue": "L'équipe de Gryffondor est tout simplement la meilleure.",
+      "phase": 4,
+      "condition": ""
   }
 ]

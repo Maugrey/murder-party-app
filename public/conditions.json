@@ -1,11 +1,7 @@
 [
     {
-      "name": "secret",
-      "description": "La cachette secrète a été découverte."
-    },
-    {
-      "name": "medoc",
-      "description": "Les médicaments ont été trouvés."
+      "name": "nadia_seen_nurse",
+      "description": "Nadia est allée à l'infirmerie pour soigner sa blessure."
     }
   ]
   
