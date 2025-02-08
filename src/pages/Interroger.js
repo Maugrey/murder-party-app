@@ -224,13 +224,13 @@ const Interroger = () => {
             ))}
           </select>
         </label>
-        {/* Affichage de "Déjà vu" uniquement si le couple a vu tous les niveaux
-            et qu'aucun indice n'est actuellement affiché (c'est-à-dire lors d'une re-sélection). */}
-        {selectedNpc && alreadySeen && (
-          <p style={{ color: 'red', fontWeight: 'bold' }}>Interrogatoire terminé</p>
-        )}
       </div>
       <button onClick={handleInterrogate}>Interroger</button>
+      {/* Affichage de "Déjà vu" uniquement si le couple a vu tous les niveaux
+          et qu'aucun indice n'est actuellement affiché (c'est-à-dire lors d'une re-sélection). */}
+      {selectedNpc && alreadySeen && (
+        <p style={{ color: 'red', fontWeight: 'bold' }}>Interrogatoire terminé</p>
+      )}
       {displayedClue && (
         <div className="clue-display">
           <h3>Indice :</h3>
