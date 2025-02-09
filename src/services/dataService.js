@@ -17,7 +17,8 @@ const DataService = {
       gameStarted: false,
       conditions: {},
       seenClues: {},   // Structure: { "location|npc": [levels] }
-      takenClues: {}   // Structure: { "location|place": true }
+      takenClues: {},   // Structure: { "location|place": true },
+      drawnPensine: []
     };
   },
 

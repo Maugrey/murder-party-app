@@ -1,0 +1,248 @@
+[
+    {
+        "location": "Bureau d'Andrew Reeves",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Andrew Reeves est assis à son bureau, une plume à la main, griffonnant une lettre sans que le texte soit lisible. Il s'arrête un instant, passe une main sur son front, puis soupire longuement avant de reprendre son écriture. Le bruit d'une horloge résonne dans la pièce."
+    },
+    {
+        "location": "Salle des Professeurs",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Reeves déplace plusieurs ouvrages sur la magie ancienne, prenant soin de les classer par ordre alphabétique. Il vérifie chaque titre avant de le ranger, comme s'il cherchait un volume spécifique. Après quelques minutes, il s'arrête et fixe un instant la fenêtre, pensif."
+    },
+    {
+        "location": "Viaduc",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Dans le silence du viaduc, Reeves se tient droit, contemplant les étoiles. Il croise les bras et inspire profondément, comme s'il essayait de se recentrer. Une brise légère fait voleter sa robe, et un hibou passe au loin."
+    },
+    {
+        "location": "Salle Commune de Serpentard",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Reeves est adossé contre un mur dans la salle commune des Serpentards, les bras croisés. Il semble attendre quelqu'un, son regard balayant la pièce d'un air patient. Un serpent de la tapisserie semble s'agiter doucement sous la lumière des chandelles."
+    },
+    {
+        "location": "Infirmerie",
+        "type": "useless",
+        "phase": 3,
+        "memory": "L'infirmerie est baignée d'une lumière tamisée. Reeves se penche sur un flacon posé sur une table et le fait tourner lentement entre ses doigts. Il renifle brièvement son contenu avant de hausser un sourcil, visiblement peu convaincu, et le repose exactement à sa place."
+    },
+    {
+        "location": "Salle de Potion",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Reeves retrousse ses manches et frotte vigoureusement l'intérieur d'un chaudron noirci. Il semble concentré sur sa tâche, ignorant les bruits autour de lui. Parfois, il s'arrête, observe les résidus au fond, puis secoue la tête et reprend son travail."
+    },
+    {
+        "location": "Salle de Sortilèges",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Face à un vieux grimoire posé sur une table, Reeves récite une incantation et agite sa baguette. Une petite lumière bleue jaillit de l'extrémité et se met à tournoyer dans les airs avant de disparaître brusquement. Reeves fronce les sourcils et recommence."
+    },
+    {
+        "location": "Bibliothèque",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Assis dans un coin reculé de la bibliothèque, Reeves parcourt un épais volume illustré représentant diverses créatures aquatiques. Il marque un passage d'un signet, puis passe lentement une main sur une gravure d'un serpent de mer, l'air songeur."
+    },
+    {
+        "location": "Terrain de Quidditch",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Sous un ciel couvert, Reeves traverse le terrain de Quidditch en observant les tribunes vides. Il s'arrête un instant, fixe les anneaux dorés, puis reprend sa marche d'un pas lent et mesuré."
+    },
+    {
+        "location": "Cuisines",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Les cuisines sont animées par les allées et venues des elfes. Reeves se tient à l'écart, les mains dans le dos, regardant un elfe couper avec précision des légumes. Il incline légèrement la tête, curieux, mais ne dit rien."
+    },
+    {
+        "location": "Toilettes",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Assis sur une cuvette, Andrew Reeves passe une main tremblante sur son front, où perle une sueur froide. Il respire bruyamment, la tête baissée. « On a essayé de m’empoisonner… » murmure-t-il à lui-même. Puis, après une pause, son expression se transforme en un mélange d’amertume et de doute. « Ou alors, c’était juste le ragoût qui était vraiment immonde… »"
+    },
+    {
+        "location": "Salle de classe",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Reeves se tient face à sa classe, sa baguette traçant des schémas dans les airs. « Le loup-garou est une créature redoutable. Il faut savoir le repérer avant qu’il ne soit trop tard. » Sa voix est posée, ses gestes précis. Un élève lève la main. « Professeur, vous en avez déjà vu un en vrai ? » Reeves s’arrête un instant, puis esquisse un léger sourire. « Oui, » répond-il simplement, avant de reprendre sa leçon."
+    },
+    {
+        "location": "Bureau d'Andrew Reeves",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Andrew Reeves est assis à son bureau, la plume courant sur le parchemin avec une précision mécanique. Il s’arrête un instant, examine son écriture, puis pousse un profond soupir. Il trempe sa plume dans l’encre et reprend, mais une soudaine agitation dans le couloir le fait lever les yeux. Il fronce les sourcils et tend l’oreille. Après quelques secondes, il secoue la tête et retourne à sa lettre, murmurant pour lui-même : « Toujours quelque chose pour me distraire… »."
+    },
+    {
+        "location": "Salle des Professeurs",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Reeves fait glisser un épais volume sur la magie ancienne dans l’armoire, classant méticuleusement les ouvrages. Un autre professeur entre, s’arrêtant devant lui. « Toujours en train de réorganiser cette bibliothèque improvisée ? » plaisante-t-il. Reeves esquisse un sourire en coin. « Quelqu’un doit bien le faire… sinon on ne retrouverait plus rien ici. » Il prend un livre poussiéreux, hésite, puis le repose. « Certains secrets valent mieux d’être oubliés », murmure-t-il."
+    },
+    {
+        "location": "Salle Commune de Serpentard",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Reeves se tient dans un coin ombragé de la salle commune des Serpentards, les bras croisés. Il attend. Une élève passe et le regarde avec curiosité. « Vous attendez quelqu’un, professeur ? » demande-t-elle d’une voix prudente. Reeves esquisse un sourire énigmatique. « Peut-être. Ou peut-être que j’observe juste la dynamique de cette maison… fascinante, non ? » L’élève hoche la tête, incertaine, avant de s’éloigner."
+    },
+    {
+        "location": "Salle de Sortilèges",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Reeves pointe sa baguette vers un vieux grimoire et murmure une incantation. Une lueur bleue flotte un instant au-dessus du livre avant de disparaître. « Toujours aussi capricieux, ce sortilège, » commente une voix derrière lui. Il tourne la tête et voit un collègue le regarder avec amusement. « Peut-être qu’il refuse de se laisser contrôler, » répond Reeves avant de réessayer."
+    },
+    {
+        "location": "Bibliothèque",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Reeves feuillette lentement un épais volume illustré sur les créatures marines, s’arrêtant sur une représentation d’un serpent de mer. Une élève à côté jette un coup d’œil discret. « Professeur, vous vous intéressez aux créatures aquatiques ? » demande-t-elle timidement. Il referme le livre et sourit. « Disons que certaines légendes méritent d’être explorées… »"
+    },
+    {
+        "location": "Terrain de Quidditch",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Les gradins vides, les anneaux de but dressés dans l’obscurité, tout semble figé. Reeves marche lentement sur la pelouse, son regard balayé par le vent nocturne. Un bruit le fait se retourner. Un élève est là, visiblement surpris. « Je… je voulais juste voir le terrain sans personne… » balbutie-t-il. Reeves le regarde un instant avant d’hocher la tête. « Profitez-en, alors. »"
+    },
+    {
+        "location": "Cuisines",
+        "type": "useless",
+        "phase": 3,
+        "memory": "Les effluves de pain chaud emplissent l’air. Reeves se tient près d’un plan de travail où un elfe découpe des légumes avec une précision impressionnante. « Vous êtes aussi précis qu’un maître potionniste, » observe Reeves. L’elfe s’arrête un instant, sourit timidement, puis reprend son travail. « La cuisine est une magie, monsieur, » répond-il simplement."
+    },
+    {
+        "location": "Cachots",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Reeves passe lentement sa main près d'une torche accrochée au mur des cachots. Il semble réfléchir, puis appuie légèrement sur la pierre en dessous. Rien ne se passe. Il laisse échapper un soupir et continue son chemin."
+    },
+    {
+        "location": "Couloirs du deuxième étage",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Dans un couloir désert, Reeves se baisse pour ramasser un vieux parchemin froissé. Il le déplie, le lit rapidement, puis hausse un sourcil avant de le glisser dans sa poche sans un mot."
+    },
+    {
+        "location": "Parc",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Devant une vieille statue couverte de mousse, Reeves passe un doigt sur une inscription à moitié effacée. Il plisse les yeux pour mieux lire, mais un bruit au loin le fait se retourner brusquement."
+    },
+    {
+        "location": "Grande Salle",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Assis seul à une table vide, Reeves fixe la table des professeurs en tapotant doucement sa baguette sur la nappe. Il semble en pleine réflexion, et par moments, ses lèvres bougent à peine comme s'il murmurait quelque chose."
+    },
+    {
+        "location": "Tour d'Astronomie",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Dans la tour d'Astronomie, Reeves ajuste un télescope poussiéreux et y jette un coup d'œil. Il s'attarde sur un point invisible à l'horizon, immobile pendant plusieurs minutes, avant de se redresser et de partir sans un mot."
+    },
+    {
+        "location": "Viaduc",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Dans l’air frais de la nuit, Reeves se tient immobile sur le viaduc, les bras croisés. Son regard perdu dans l’obscurité suit le vol silencieux d’un hibou. « Vous ne devriez pas être ici à cette heure, professeur, » lance une voix derrière lui. Il se retourne lentement, découvrant un élève en robe de Serdaigle. « Et vous non plus, » répond-il calmement. L’élève hésite avant de détourner le regard et de s’éloigner. Reeves, lui, reste encore quelques minutes, pensif."
+    },
+    {
+        "location": "Infirmerie",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "L’infirmerie est silencieuse à cette heure tardive. Reeves examine un flacon posé sur une étagère, le fait tourner entre ses doigts. Derrière lui, l’infirmière l’observe. « Vous cherchez quelque chose de particulier, professeur Reeves ? » demande-t-elle doucement. Il repose le flacon avec précaution. « Juste une vieille habitude… » Il esquisse un sourire avant de quitter la pièce."
+    },
+    {
+        "location": "Salle de Potion",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Reeves retrousse ses manches et frotte énergiquement l’intérieur du chaudron noirci. « Un chaudron mal entretenu peut ruiner une potion parfaite, » lance-t-il à un élève qui l’observe d’un air curieux. L’élève acquiesce en silence, puis ose demander : « Vous préparez quelque chose, professeur ? ». Reeves s’arrête, essuie ses mains et hausse un sourcil. « Disons que je m’assure que tout soit en ordre… »"
+    },
+    {
+        "location": "Cachots",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Reeves passe lentement la main sous une torche murale, frôlant les pierres. Une élève qui passait s’arrête. « Professeur ? » demande-t-elle, intriguée. Il se redresse et esquisse un sourire. « Juste une vieille habitude… parfois, ces couloirs cachent plus qu’on ne le croit. » Il tapote la pierre et s’éloigne, laissant l’élève pensive."
+    },
+    {
+        "location": "Couloirs du deuxième étage",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Dans un couloir désert, Reeves ramasse un parchemin chiffonné. Il le déplie, le lit rapidement, puis le range dans sa poche sans un mot. Une voix s’élève derrière lui. « C’était important ? » demande un élève curieux. Reeves se tourne légèrement. « Ça dépend pour qui… »"
+    },
+    {
+        "location": "Grande Salle",
+        "type": "false-lead",
+        "phase": 3,
+        "memory": "Assis seul à une table vide, Reeves regarde la table des professeurs, son regard errant de chaise en chaise. Un collègue s’approche. « Vous attendez quelqu’un ? » Reeves secoue la tête. « Non… juste en train de me demander combien de secrets ont été échangés à cette table. »"
+    },
+    {
+        "location": "Bureau d'Andrew Reeves",
+        "type": "clue",
+        "phase": 5,
+        "memory": "Andrew Reeves est assis derrière son bureau, le regard fixé sur Mathew Marble qui lui fait face, debout, mal à l’aise. D’une voix posée mais implacable, Reeves lui rappelle l’accord qu’ils avaient. « Je veux la potion que tu m’as promise. Sinon… tout le monde saura comment Gryffondor a gagné ce match. » Mathew serre les dents, jette un regard furtif vers la porte, puis acquiesce d’un signe de tête. « Vous l'aurez, » murmure-t-il avant de quitter précipitamment la pièce."
+    },
+    {
+        "location": "Couloirs du château",
+        "type": "clue",
+        "phase": 5,
+        "memory": "C'est la nuit. Andrew Reeves avance lentement dans les couloirs, son pas feutré à peine audible sur la pierre froide. Il suit quelqu’un, restant dans l’ombre pour ne pas être vu. La silhouette devant lui tourne au bout du couloir : c’est Felicity Laige. Elle rejoint quelqu’un. Une autre silhouette apparaît, plus fine, plus petite. Une élève. Elles échangent quelques mots à voix basse, puis, sans un bruit, s’embrassent. Reeves observe la scène un instant, avant de reculer lentement et disparaître dans l'obscurité."
+    },
+    {
+        "location": "Bureau d'Andrew Reeves",
+        "type": "clue",
+        "phase": 3,
+        "memory": "Felicity Laige se tient debout face à Andrew Reeves, visiblement contrariée. « C’est inadmissible, » dit-elle en croisant les bras. « Vous savez aussi bien que moi que cette victoire n’a rien de légitime. J’exige que vous annuliez le match ! » Reeves reste silencieux un instant, son regard impassible. Puis, lentement, il s’appuie contre le dossier de sa chaise. « Je sais exactement pourquoi vous êtes venue me parler de ça » dit-il d’un ton calme. « Et ça aussi, ça n'a rien de légitime » ajoute-t-il d'un air satisfait."
+    },
+    {
+        "location": "Bureau de la Directrice",
+        "type": "clue",
+        "phase": 5,
+        "memory": "Reeves est debout devant le bureau de la directrice, ses mains posées sur le bois poli. Son regard est dur. « Vous savez que je vais tout raconter au Ministère, n’est-ce pas ? » Hannah MacMillan, assise de l’autre côté, le regarde sans ciller. « Je n’ai aucune idée de quoi vous parlez, » répond-elle d’une voix mesurée. Reeves plisse les yeux. « Ce n’est qu’une question de temps avant que je révèle la vérité sur Hadrian Bellesistoires. Vous ne pourrez pas le protéger éternellement. Il n'est pas l'un des notres. »"
+    },
+    {
+        "location": "Salle Commune de Serpentard",
+        "type": "clue",
+        "phase": 3,
+        "memory": "Dans l’ombre de la salle commune, Reeves s’est posté discrètement derrière une colonne. Il observe deux silhouettes échanger un petit flacon brillant. « Voilà ta potion, » chuchote une voix rauque. L’autre hésite, puis tend un sachet en retour. Reeves serre les dents. Il connaît cette voix. L’un des élèves impliqués est censé être irréprochable. Il plisse les yeux, cherchant à mieux voir."
+    },
+    {
+        "location": "Infirmerie",
+        "type": "clue",
+        "phase": 5,
+        "memory": "Un élève est assis sur un lit, le teint blême. Reeves croise les bras, le regard sévère. « Ce n’est pas une simple indigestion. Qu’est-ce que tu as bu ? » L’élève évite son regard. « Rien de spécial, professeur... juste une potion... pour l’endurance... » Reeves inspire profondément. « Achille Parmentier te l’a vendue ? » L’élève ne répond pas, mais son silence en dit long."
+    },
+    {
+        "location": "Bureau de la Directrice",
+        "type": "clue",
+        "phase": 3,
+        "memory": "La directrice lève les yeux sur Reeves, qui se tient devant elle, la mâchoire crispée. « Je vais au ministère avec ça, » annonce-t-il en posant un dossier sur son bureau. « Hadrian Bellesistoires cache quelque chose, et vous le savez. » La directrice reste silencieuse. Reeves s’appuie sur le bureau. « Vous couvrez un menteur. »"
+    },
+    {
+        "location": "Salle de classe",
+        "type": "clue",
+        "phase": 3,
+        "memory": "« Les loups-garous ne sont pas la seule menace dans ce château, » dit Reeves en fixant son élève. « Il y a des prédateurs bien plus dangereux... cachés derrière une beauté irresistible » L’élève frissonne. « Vous parlez de quoi, professeur ? » Reeves reste silencieux un instant, puis se détourne. « Oublie ça. »"
+    },
+    {
+        "location": "Couloirs du premier étage",
+        "type": "clue",
+        "phase": 5,
+        "memory": "Dans l’ombre d’un couloir, Reeves entend deux élèves discuter à voix basse. « David Malone enlève des points à Gryffondor et Serdaigle dès qu'il peut… mais à Poufsouffle, jamais rien. » L’autre élève acquiesce. « Il fait ça depuis le début de l’année, et personne ne dit rien ? » Reeves hoche imperceptiblement la tête, mémorisant ces paroles."
+    },
+    {
+        "location": "Salle des Trophées",
+        "type": "clue",
+        "phase": 3,
+        "memory": "Reeves s'arrête devant le tableau des points des maisons. Il plisse les yeux en remarquant une étrange irrégularité. Serdaigle a perdu 30 points en une seule journée, alors que Poufsouffle n’a rien perdu depuis plusieurs jours. Il sort un carnet de sa poche et note cette anomalie."
+    },
+    {
+        "location": "Librairie Fleury et Bott",
+        "type": "clue",
+        "phase": 3,
+        "memory": "Dans l’ombre tamisée de la librairie, Reeves parcourt les rayonnages jusqu’à une section reculée dédiée aux créatures magiques. Son regard s’arrête sur un volume à la couverture usée : « Les Vélanes : Nature, Pouvoirs et Influence sur les Sorciers ». Il le sort prudemment, souffle sur la poussière qui s’y est déposée, puis l’ouvre à une page marquée. Ses yeux parcourent rapidement le texte, son expression se durcissant au fil des lignes. Il murmure : « Ca confirme ce que je pensais… ». Après un moment, il referme brusquement l’ouvrage et le replace dans l’étagère, jetant un coup d'œil furtif autour de lui avant de quitter la boutique d’un pas rapide."
+    }
+]

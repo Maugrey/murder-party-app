@@ -1,0 +1,48 @@
+/* Pensine.css */
+
+.pensine-page {
+    padding: 1rem;
+  }
+  
+  .pensine-page h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Bouton */
+  .pensine-page button {
+    padding: 1rem 1.5rem;
+    font-size: 1.1em;
+    margin-top: 1rem;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pensine-page button:hover {
+    background-color: #003366;
+  }
+  
+  /* Message lorsque la pensine est vide */
+  .empty-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  
+  /* Styles pour l'effet sliding par lettre */
+  .sliding-text span {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideIn 2s forwards;
+  }
+  
+  @keyframes slideIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
